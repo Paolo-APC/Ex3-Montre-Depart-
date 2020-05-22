@@ -93,6 +93,10 @@ namespace ApplicationMontre
         {
              m_heures = pHeures;
         }
+         void InitialiserMinutes(int pMinutes)
+        {
+             m_minutes = pMinutes;
+        }
         public string ObtenirTempsCourant() //4
         {
             return m_heures + ":" + m_minutes.ToString("00") + ":" + m_secondes.ToString("00");
