@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -89,7 +89,10 @@ namespace ApplicationMontre
             m_minutes = pMinutes;
             m_heures = pHeure;
         }
-
+        void InitialiserHeure(int pHeures)
+        {
+             m_heures = pHeures;
+        }
         public string ObtenirTempsCourant() //4
         {
             return m_heures + ":" + m_minutes.ToString("00") + ":" + m_secondes.ToString("00");
